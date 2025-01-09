@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; 
+    color: #333;
+}
+
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff6347; 
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.task-input, .task-filter {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.task-input input, .task-input select, .task-input button {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid #007bff; 
+    border-radius: 5px;
+}
+
+.task-input button {
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #0056b3; 
+}
+
+
+.task-filter select {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid #32cd32; 
+    border-radius: 5px;
+}
+
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    background-color: #fff;
+    border: 2px solid #ffa500; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #e0e0e0; 
+}
+
+
+.task-list li button {
+    margin-left: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.task-list li button:first-of-type {
+    background-color: #32cd32; 
+    color: white;
+}
+
+.task-list li button:first-of-type:hover {
+    background-color: #228b22; 
+}
+
+.task-list li button:last-of-type {
+    background-color: #ff6347; 
+    color: white;
+}
+
+.task-list li button:last-of-type:hover {
+    background-color: #cc3333; 
+}
+
+
+#clear-tasks {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #ff4500; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#clear-tasks:hover {
+    background-color: #cc3700; 
+}

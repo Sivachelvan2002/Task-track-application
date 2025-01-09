@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Tracker Application</h1>
+    </header>
+    <main>
+        <section class="task-input">
+            <input type="text" id="task-name" placeholder="Enter task name" />
+            <select id="task-category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </section>
+        <section class="task-filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </section>
+        <section class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+        <button id="clear-tasks">Clear All Tasks</button>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
